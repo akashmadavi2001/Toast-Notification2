@@ -1,13 +1,11 @@
 let btns = document.querySelectorAll('button');
 let toastbox = document.querySelector('.toastbox');
 
-
 btns.forEach(btn => {
-
     btn.addEventListener('click', () => {
         let toast = document.createElement('div');
         toast.classList.add('toast');
-
+        
         if (btn.innerHTML == "Success") {
             toast.innerHTML = "<img src='./check.png'> SuccessFully";
             toast.classList.add('success');
@@ -34,7 +32,5 @@ btns.forEach(btn => {
         setTimeout(() => {
             toast.remove();
         }, 5000);
-
     })
-
 })
