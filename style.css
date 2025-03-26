@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #999;
+    color: white;
+    cursor: pointer;z-index: 1;
+}
+
+.toastbox {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.toast {
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    color: white;
+    animation: animation 5s ease-in-out 0s forwards;
+}
+
+@keyframes animation {
+    0% {
+        transform: translate(-300px);
+    }
+
+    10% {
+        transform: translate(0px);
+    }
+
+    90% {
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(-300px);
+    }
+}
+
+img {
+    width: 25px;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    padding: 1.5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.success {
+    background: linear-gradient(to right, green, green, transparent);
+    border-left: 3px solid #00ff00;
+}
+
+.error {
+    background: linear-gradient(to right, #ff000099, #ff000099, transparent);
+    border-left: 3px solid #ff3c00;
+}
+
+.invalid {
+    background: linear-gradient(to right, #ffdd0099, #ffdd0099, transparent);
+    border-left: 3px solid yellow;
+}
+
+.info {
+    background: linear-gradient(to right, #007bff99, #007bff99, transparent);
+    border-left: 3px solid #007bff;
+}
