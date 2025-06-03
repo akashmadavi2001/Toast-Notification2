@@ -26,11 +26,12 @@ body {
 button {
     width: 100px;
     height: 30px;
-    border-radius: 10px;
-    border: none;
-    background-color: #999;
+    border-radius: 5px;
+    border: 1px solid auto;
+    background: #999;
     color: white;
-    cursor: pointer;z-index: 1;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .toastbox {
