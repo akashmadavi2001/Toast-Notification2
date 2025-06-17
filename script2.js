@@ -34,5 +34,5 @@ btns.forEach(btn => {
         setTimeout(() => {
             toast.remove();
         }, 5000);
-    })
-})
+    });
+});
