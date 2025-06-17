@@ -9,7 +9,7 @@ function success() {
     setTimeout(() => {
         toast.remove();
     }, 5000);
-}
+};
 
 function error() {
     let toast = document.createElement('div');
@@ -20,7 +20,7 @@ function error() {
     setTimeout(() => {
         toast.remove();
     }, 5000);
-}
+};
 
 function invalid() {
     let toast = document.createElement('div');
@@ -31,7 +31,7 @@ function invalid() {
     setTimeout(() => {
         toast.remove();
     }, 5000);
-}
+};
 
 function info() {
     let toast = document.createElement('div');
@@ -42,4 +42,4 @@ function info() {
     setTimeout(() => {
         toast.remove();
     }, 5000);
-}
+};
